@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!--CDN-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          maxWidth: {
+            'base': '1080px',
+            'screen-base': '1440px'
+          },
+          screens:{
+            '2xl': '2050px',
+          },
+          colors: {
+            "primary-00": "hsl(24, 5%, 18%)",//Dark Charcoal
+            "primary-01": "hsl(30, 10%, 34%)",//Wenge Brown
+            "primary-02": "hsl(30, 18%, 87%)", //Light Grey
+            "primary-03": "hsl(30, 54%, 90%)", //Eggshell
+            "primary-04": "hsl(330, 100%, 98%)", //Rose White
+            "primary-05": "hsl(14, 45%, 36%)", //Nutmeg
+            "primary-06": "hsl(332, 51%, 32%)", //Dark Raspberry
+          }
+        },
+        fontFamily: {
+          "young": ['Young Serif'], 
+          "outfit": ['Outfit'], 
+        }
+      }
+    }
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  
+  </style>
+</head>
+<body>
+  <section class="md:px-5 md:py-10 lg:py-28 2xl:py-40 bg-primary-03">
+    <div class="mx-auto max-2xl:max-w-base max-w-screen-base">
+      <div class="bg-white md:rounded-3xl max-md:pb-8 md:p-8 lg:p-14 mb-5">
+        <div class="mb-10">
+          <img class="md:rounded-2xl" src="..assets/images/image-omelette.jpeg" alt="Omelette"/>
+        </div>
+        <div class="mb-12 max-md:px-8">
+          <h1 class="font-young text-primary-00 text-4xl 2xl:text-5xl mb-5">Simple Omelette Recipe</h1>
+          <p class="font-outfit text-lg 2xl:text-xl text-primary-01">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+          </p>
+        </div>
+        <div class="max-md:px-8">
+          <div class="font-outfit bg-primary-04 rounded-2xl p-5 md:p-7 mb-10">
+            <h3 class="text-primary-06 font-semibold text-2xl 2xl:text-3xl mb-3">Preparation time</p>
+            <ul class="list-disc space-y-3 font-normal text-primary-01 text-xl 2xl:text-2xl marker:text-primary-06 ml-10">
+              <li><span class="font-bold">Total</span>: Approximately 10 minutes</li>
+              <li><span class="font-bold">Preparation</span>: 5 minutes</li>
+              <li><span class="font-bold">Cooking</span>: 5 minutes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-md:px-8">
+          <div class="pb-10 border-b border-primary-01/30 mb-10">
+            <h3 class="font-young text-primary-05 text-3xl 2xl:text-4xl mb-5">Ingredients</h3>
+            <ul class="list-disc space-y-3 text-primary-01 text-xl 2xl:text-2xl marker:text-primary-05 ml-8">
+              <li>2-3 large eggs</li>
+              <li>Salt, to taste</li>
+              <li>Pepper, to taste</li>
+              <li>1 tablespoon of butter or oil</li>
+              <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="max-md:px-8">
+          <div class="pb-10 border-b border-primary-01/30 mb-10">
+            <h3 class="font-young text-primary-05 text-3xl 2xl:text-4xl mb-5">Instructions</h3>
+            <ol class="list-decimal space-y-3 text-primary-01 text-xl 2xl:text-2xl marker:text-primary-05 marker:font-bold ml-8">
+              <li><span class="font-bold">Beat the eggs: </span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+              <li><span class="font-bold">Heat the pan: </span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+              <li><span class="font-bold">Cook the omelette: </span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+              <li><span class="font-bold">Add fillings (optional): </span> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+              <li><span class="font-bold">Fold and serve: </span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+              <li><span class="font-bold">Enjoy: </span> Serve hot, with additional salt and pepper if needed.
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="max-md:px-8 max-md:mb-10">
+          <h3 class="font-young text-primary-05 text-3xl 2xl:text-4xl mb-5">Nutrition</h3>
+          <div class="list-decimal space-y-3 text-primary-01 text-xl 2xl:text-2xl marker:text-primary-05 marker:font-bold">
+            <p>The table below shows nutritional values per serving without the additional fillings.</p>
+            <div class="divide divide-y divide-primary-01/20">
+              <div class="grid grid-cols-2 py-3 px-10">
+                <p>Calories</p>
+                <p class="font-bold text-primary-05">277kcal</p>
+              </div>
+              <div class="grid grid-cols-2 py-3 px-10">
+                <p>Carbs</p>
+                <p class="font-bold text-primary-05">0g</p>
+              </div>
+              <div class="grid grid-cols-2 py-3 px-10">
+                <p>Protein</p>
+                <p class="font-bold text-primary-05">20g</p>
+              </div>
+              <div class="grid grid-cols-2 py-3 px-10">
+                <p>Fat</p>
+                <p class="font-bold text-primary-05">22g</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="attribution -- md:hidden">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Justine Bolilan</a>.
+        </div>
+      </div>
+      <div class="attribution -- max-md:hidden">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Justine Bolilan</a>.
+      </div>
+    </div>
+  </section>
+</body>
+</html>
